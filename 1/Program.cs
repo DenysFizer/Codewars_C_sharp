@@ -5,7 +5,7 @@ public static class Kata
     public static void Main(string[] args)
     {
         int[] dice = new int[] { 4, 4, 4, 3, 3 };
-       Console.WriteLine(Score(dice));
+        Score(dice);
     }
     //calculate the number of numbers
     public static int Score(int[] dice)
@@ -73,5 +73,5 @@ public static class Kata
         }
 
         return result;
-        Console.WriteLine("hey");
+        
     }}
