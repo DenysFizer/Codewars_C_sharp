@@ -1,11 +1,13 @@
 ﻿using System;
 public static class Kata
 {
+    
     public static void Main(string[] args)
     {
         int[] dice = new int[] { 4, 4, 4, 3, 3 };
-        Score(dice);
+       Console.WriteLine(Score(dice));
     }
+    //calculate the number of numbers
     public static int Score(int[] dice)
     {
         int[] nums =new int[] {0, 0, 0, 0, 0, 0, 0};
@@ -13,6 +15,8 @@ public static class Kata
         {
             nums[dice[i]]++;
         }
+
+        int go = 5;
         int result = 0;
       
         for (int i = 1; i < nums.Length; i++)
@@ -69,5 +73,5 @@ public static class Kata
         }
 
         return result;
-
+        Console.WriteLine("hey");
     }}
